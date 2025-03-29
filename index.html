@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben 10 RPG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            overflow: hidden;
+        }
+        #game-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        #game-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        
+        <!-- Omnitrix Wheel UI (hidden by default) -->
+        <div id="omnitrix-wheel" class="hidden absolute inset-0 flex items-center justify-center">
+            <div class="relative w-64 h-64">
+                <div class="absolute inset-0 rounded-full bg-gray-900 opacity-90"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-16 h-16 rounded-full bg-green-500 animate-pulse"></div>
+                </div>
+                <!-- Alien selection buttons will be added dynamically -->
+            </div>
+        </div>
+
+        <!-- HUD Elements -->
+        <div id="hud" class="absolute top-0 left-0 right-0 p-4 flex justify-between">
+            <div class="health-bar bg-gray-800 rounded-full h-6 w-64 overflow-hidden">
+                <div class="health-fill bg-green-500 h-full" style="width: 100%"></div>
+            </div>
+            <div class="omnitrix-charge flex items-center space-x-2">
+                <i class="fas fa-bolt text-yellow-400"></i>
+                <div class="w-32 h-4 bg-gray-800 rounded-full overflow-hidden">
+                    <div class="charge-fill bg-blue-500 h-full" style="width: 100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js" type="module"></script>
+</body>
+</html>
