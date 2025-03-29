@@ -1,0 +1,52 @@
+[
+    {
+        "id": "heatblast",
+        "name": "Heatblast",
+        "health": 120,
+        "attack": 30,
+        "speed": 150,
+        "abilities": ["fireball", "flamethrower"],
+        "color": "#ff4500",
+        "description": "Pyrokinesis and extreme heat resistance"
+    },
+    {
+        "id": "diamondhead",
+        "name": "Diamondhead",
+        "health": 200,
+        "attack": 25,
+        "speed": 100,
+        "abilities": ["crystal_spikes", "hardened_body"],
+        "color": "#00bfff",
+        "description": "Crystalline structure with projectile capabilities"
+    },
+    {
+        "id": "xlr8",
+        "name": "XLR8",
+        "health": 80,
+        "attack": 15,
+        "speed": 400,
+        "abilities": ["super_speed", "rapid_strikes"],
+        "color": "#0000ff",
+        "description": "Superhuman speed and reflexes"
+    },
+    {
+        "id": "fourarms",
+        "name": "Four Arms",
+        "health": 180,
+        "attack": 40,
+        "speed": 120,
+        "abilities": ["power_punch", "grapple"],
+        "color": "#ff0000",
+        "description": "Super strength with four powerful arms"
+    },
+    {
+        "id": "ghostfreak",
+        "name": "Ghostfreak",
+        "health": 90,
+        "attack": 20,
+        "speed": 180,
+        "abilities": ["intangibility", "possession"],
+        "color": "#800080",
+        "description": "Phantom-like abilities including invisibility"
+    }
+]
