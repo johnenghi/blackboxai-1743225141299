@@ -1,0 +1,29 @@
+[
+    {
+        "id": "vulpimancer",
+        "name": "Vulpimancer",
+        "health": 50,
+        "attack": 10,
+        "speed": 100,
+        "abilities": ["claw_attack"],
+        "description": "Wild canine-like alien species"
+    },
+    {
+        "id": "tetramand",
+        "name": "Tetramand",
+        "health": 100,
+        "attack": 20,
+        "speed": 80,
+        "abilities": ["power_punch"],
+        "description": "Strong four-armed warrior species"
+    },
+    {
+        "id": "ectonurite",
+        "name": "Ectonurite",
+        "health": 40,
+        "attack": 15,
+        "speed": 120,
+        "abilities": ["intangible_attack"],
+        "description": "Ghost-like alien species"
+    }
+]
